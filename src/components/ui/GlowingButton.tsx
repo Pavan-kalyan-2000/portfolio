@@ -35,7 +35,7 @@ const GlowingButton: React.FC<GlowingButtonProps> = ({
         size={size}
         onClick={onClick}
         className={cn(
-          "relative bg-background hover:bg-black text-white font-medium",
+          "relative bg-background hover:bg-black text-white font-medium uppercase tracking-wide",
           className
         )}
         {...props}

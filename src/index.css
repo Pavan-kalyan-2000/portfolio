@@ -1,4 +1,3 @@
-
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -42,8 +41,12 @@
   }
 
   body {
-    @apply bg-background text-foreground antialiased;
+    @apply bg-background text-foreground antialiased font-sans;
     font-feature-settings: "ss01", "ss02", "cv01", "cv02", "cv03";
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-heading uppercase tracking-wide;
   }
 
   ::-webkit-scrollbar {
@@ -87,7 +90,7 @@
   }
 
   .text-gradient {
-    @apply bg-gradient-to-r from-pink-300 to-pink-500 bg-clip-text text-transparent;
+    @apply bg-gradient-to-r from-pink-300 to-pink-500 bg-clip-text text-transparent uppercase;
   }
 
   .gradient-border {
@@ -111,16 +114,20 @@
   }
 
   .nav-link {
-    @apply relative text-muted-foreground transition-colors duration-200 hover:text-white;
+    @apply relative text-muted-foreground transition-colors duration-200 hover:text-white uppercase tracking-wide;
   }
 
   .nav-link::after {
-    content: "";
     @apply absolute bottom-0 left-0 w-0 h-px bg-pink-500 transition-all duration-300 ease-out-expo;
+    content: "";
   }
 
   .nav-link:hover::after {
     @apply w-full;
+  }
+  
+  .uppercase-text {
+    @apply uppercase tracking-wide;
   }
 }
 

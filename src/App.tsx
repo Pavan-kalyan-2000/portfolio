@@ -8,6 +8,12 @@ import Index from "./pages/Index";
 import NotFound from "./pages/NotFound";
 import "./App.css";
 
+// Add Google Fonts - Montserrat
+const fontLink = document.createElement('link');
+fontLink.rel = 'stylesheet';
+fontLink.href = 'https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&display=swap';
+document.head.appendChild(fontLink);
+
 const queryClient = new QueryClient();
 
 const App = () => (

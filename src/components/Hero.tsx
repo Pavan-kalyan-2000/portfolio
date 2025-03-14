@@ -42,29 +42,29 @@ const Hero: React.FC = () => {
       <div className="container mx-auto px-6 z-10">
         <div className="max-w-3xl mx-auto text-center">
           <div className="inline-block mb-4 px-4 py-1 rounded-full bg-muted backdrop-blur-sm border border-pink-500/20">
-            <p className="text-sm font-medium">
-              <span className="text-pink-400">Frontend Developer</span> with 3+ Years Experience
+            <p className="text-sm font-medium uppercase tracking-wider">
+              <span className="text-pink-400">FRONTEND DEVELOPER</span> WITH 3+ YEARS EXPERIENCE
             </p>
           </div>
           
-          <h1 className="text-4xl md:text-6xl font-bold mb-6 leading-tight">
+          <h1 className="text-4xl md:text-6xl font-bold mb-6 leading-tight uppercase tracking-wide">
             <AnimatedText
-              text="Creating beautiful digital experiences through code"
+              text="CREATING BEAUTIFUL DIGITAL EXPERIENCES THROUGH CODE"
               animation="reveal"
               className="block"
             />
           </h1>
           
-          <p className="text-muted-foreground text-lg md:text-xl mb-8 opacity-0 animate-fade-in-up" style={{ animationDelay: "0.5s", animationFillMode: "forwards" }}>
-            I specialize in building modern, responsive interfaces with Angular, HTML, and CSS, turning design concepts into pixel-perfect websites.
+          <p className="text-muted-foreground text-lg md:text-xl mb-8 opacity-0 animate-fade-in-up uppercase tracking-wide" style={{ animationDelay: "0.5s", animationFillMode: "forwards" }}>
+            I SPECIALIZE IN BUILDING MODERN, RESPONSIVE INTERFACES WITH ANGULAR, HTML, AND CSS, TURNING DESIGN CONCEPTS INTO PIXEL-PERFECT WEBSITES.
           </p>
           
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4 opacity-0 animate-fade-in-up" style={{ animationDelay: "0.7s", animationFillMode: "forwards" }}>
             <GlowingButton size="lg" onClick={() => document.querySelector("#projects")?.scrollIntoView({ behavior: "smooth" })}>
-              View My Work
+              VIEW MY WORK
             </GlowingButton>
             <GlowingButton size="lg" variant="outline" onClick={() => document.querySelector("#contact")?.scrollIntoView({ behavior: "smooth" })}>
-              Get In Touch
+              GET IN TOUCH
             </GlowingButton>
           </div>
         </div>
@@ -75,7 +75,7 @@ const Hero: React.FC = () => {
           onClick={() => document.querySelector("#about")?.scrollIntoView({ behavior: "smooth" })}
           className="text-muted-foreground hover:text-white transition-colors flex flex-col items-center"
         >
-          <span className="text-sm font-medium mb-2">Scroll Down</span>
+          <span className="text-sm font-medium mb-2 uppercase tracking-wide">SCROLL DOWN</span>
           <ArrowDown size={20} />
         </button>
       </div>

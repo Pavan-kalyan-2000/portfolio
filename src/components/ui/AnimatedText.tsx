@@ -9,6 +9,7 @@ interface AnimatedTextProps {
   charClassName?: string;
   once?: boolean;
   animation?: "fade" | "slide" | "reveal";
+  uppercase?: boolean;
 }
 
 const AnimatedText: React.FC<AnimatedTextProps> = ({
@@ -18,12 +19,15 @@ const AnimatedText: React.FC<AnimatedTextProps> = ({
   charClassName,
   once = true,
   animation = "fade",
+  uppercase = true,
 }) => {
   const splitText = text.split(" ");
+  const formattedText = uppercase ? text.toUpperCase() : text;
+  const splitFormattedText = formattedText.split(" ");
   
   return (
     <span className={cn("inline-block", className)}>
-      {splitText.map((word, wordIndex) => (
+      {splitFormattedText.map((word, wordIndex) => (
         <span 
           key={wordIndex} 
           className={cn(
@@ -32,6 +36,7 @@ const AnimatedText: React.FC<AnimatedTextProps> = ({
               "opacity-0": animation === "fade",
               "animate-fade-in": animation === "fade",
             },
+            uppercase && "uppercase tracking-wide",
             wordClassName
           )}
           style={{ 

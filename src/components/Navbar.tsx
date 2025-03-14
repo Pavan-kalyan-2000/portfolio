@@ -32,11 +32,11 @@ const Navbar: React.FC = () => {
   }, [mobileMenuOpen]);
 
   const navLinks = [
-    { name: "Home", href: "#home" },
-    { name: "About", href: "#about" },
-    { name: "Skills", href: "#skills" },
-    { name: "Projects", href: "#projects" },
-    { name: "Contact", href: "#contact" },
+    { name: "HOME", href: "#home" },
+    { name: "ABOUT", href: "#about" },
+    { name: "SKILLS", href: "#skills" },
+    { name: "PROJECTS", href: "#projects" },
+    { name: "CONTACT", href: "#contact" },
   ];
 
   const handleNavClick = (href: string) => {
@@ -57,9 +57,9 @@ const Navbar: React.FC = () => {
       )}
     >
       <div className="container mx-auto px-6 flex items-center justify-between">
-        <a href="#home" className="text-xl font-bold tracking-tight">
-          <span className="text-white">Dev</span>
-          <span className="text-pink-500">Folio</span>
+        <a href="#home" className="text-xl font-bold tracking-tight uppercase">
+          <span className="text-white">DEV</span>
+          <span className="text-pink-500">FOLIO</span>
         </a>
 
         {/* Desktop Menu */}
@@ -81,7 +81,7 @@ const Navbar: React.FC = () => {
             size="sm"
             onClick={() => window.open("mailto:contact@example.com")}
           >
-            Hire Me
+            HIRE ME
           </GlowingButton>
         </nav>
 
@@ -110,13 +110,13 @@ const Navbar: React.FC = () => {
                 e.preventDefault();
                 handleNavClick(link.href);
               }}
-              className="text-2xl font-medium text-white hover:text-pink-400 transition-colors"
+              className="text-2xl font-medium text-white hover:text-pink-400 transition-colors uppercase tracking-wide"
             >
               {link.name}
             </a>
           ))}
           <GlowingButton onClick={() => window.open("mailto:contact@example.com")}>
-            Hire Me
+            HIRE ME
           </GlowingButton>
         </div>
       </div>

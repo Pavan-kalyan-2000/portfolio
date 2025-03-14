@@ -129,8 +129,9 @@ export default {
         "out-expo": "cubic-bezier(0.19, 1, 0.22, 1)",
       },
       fontFamily: {
-        sans: ["SF Pro Display", "Inter", "sans-serif"],
-        body: ["SF Pro Text", "Inter", "sans-serif"],
+        sans: ['Montserrat', 'SF Pro Display', 'Inter', 'sans-serif'],
+        body: ['Montserrat', 'SF Pro Text', 'Inter', 'sans-serif'],
+        heading: ['Montserrat', 'serif'],
       },
     },
   },
