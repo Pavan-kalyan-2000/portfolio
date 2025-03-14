@@ -1,0 +1,88 @@
+
+import React, { useEffect, useRef } from "react";
+import { ArrowDown } from "lucide-react";
+import AnimatedText from "./ui/AnimatedText";
+import GlowingButton from "./ui/GlowingButton";
+
+const Hero: React.FC = () => {
+  const heroRef = useRef<HTMLDivElement>(null);
+  
+  useEffect(() => {
+    const handleMouseMove = (e: MouseEvent) => {
+      if (!heroRef.current) return;
+      
+      const { clientX, clientY } = e;
+      const { left, top, width, height } = heroRef.current.getBoundingClientRect();
+      
+      const x = (clientX - left) / width;
+      const y = (clientY - top) / height;
+      
+      heroRef.current.style.setProperty("--mouse-x", `${x}`);
+      heroRef.current.style.setProperty("--mouse-y", `${y}`);
+    };
+    
+    window.addEventListener("mousemove", handleMouseMove);
+    
+    return () => {
+      window.removeEventListener("mousemove", handleMouseMove);
+    };
+  }, []);
+
+  return (
+    <section
+      id="home"
+      ref={heroRef}
+      className="relative min-h-screen flex items-center justify-center pt-16"
+      style={{
+        background: "radial-gradient(circle at calc(var(--mouse-x, 0.5) * 100%) calc(var(--mouse-y, 0.5) * 100%), rgba(255, 0, 128, 0.15), transparent 40%)",
+      }}
+    >
+      <div className="absolute inset-0 bg-[url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjAiIGhlaWdodD0iMjAiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGcgZmlsbD0iIzMzMyIgZmlsbC1ydWxlPSJldmVub2RkIj48Y2lyY2xlIGN4PSIxIiBjeT0iMSIgcj0iMSIvPjwvZz48L3N2Zz4=')] opacity-10" />
+      
+      <div className="container mx-auto px-6 z-10">
+        <div className="max-w-3xl mx-auto text-center">
+          <div className="inline-block mb-4 px-4 py-1 rounded-full bg-muted backdrop-blur-sm border border-pink-500/20">
+            <p className="text-sm font-medium">
+              <span className="text-pink-400">Frontend Developer</span> with 3+ Years Experience
+            </p>
+          </div>
+          
+          <h1 className="text-4xl md:text-6xl font-bold mb-6 leading-tight">
+            <AnimatedText
+              text="Creating beautiful digital experiences through code"
+              animation="reveal"
+              className="block"
+            />
+          </h1>
+          
+          <p className="text-muted-foreground text-lg md:text-xl mb-8 opacity-0 animate-fade-in-up" style={{ animationDelay: "0.5s", animationFillMode: "forwards" }}>
+            I specialize in building modern, responsive interfaces with Angular, HTML, and CSS, turning design concepts into pixel-perfect websites.
+          </p>
+          
+          <div className="flex flex-col sm:flex-row items-center justify-center gap-4 opacity-0 animate-fade-in-up" style={{ animationDelay: "0.7s", animationFillMode: "forwards" }}>
+            <GlowingButton size="lg" onClick={() => document.querySelector("#projects")?.scrollIntoView({ behavior: "smooth" })}>
+              View My Work
+            </GlowingButton>
+            <GlowingButton size="lg" variant="outline" onClick={() => document.querySelector("#contact")?.scrollIntoView({ behavior: "smooth" })}>
+              Get In Touch
+            </GlowingButton>
+          </div>
+        </div>
+      </div>
+      
+      <div className="absolute bottom-10 left-1/2 transform -translate-x-1/2 animate-bounce">
+        <button 
+          onClick={() => document.querySelector("#about")?.scrollIntoView({ behavior: "smooth" })}
+          className="text-muted-foreground hover:text-white transition-colors flex flex-col items-center"
+        >
+          <span className="text-sm font-medium mb-2">Scroll Down</span>
+          <ArrowDown size={20} />
+        </button>
+      </div>
+      
+      <div className="absolute bottom-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-pink-500/50 to-transparent" />
+    </section>
+  );
+};
+
+export default Hero;
