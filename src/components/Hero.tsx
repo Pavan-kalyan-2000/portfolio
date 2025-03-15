@@ -43,16 +43,17 @@ const Hero: React.FC = () => {
         <div className="max-w-3xl mx-auto text-center">
           <div className="inline-block mb-4 px-4 py-1 rounded-full bg-muted backdrop-blur-sm border border-pink-500/20">
             <p className="text-sm font-medium uppercase tracking-wider">
-              <span className="text-pink-400">FRONTEND DEVELOPER</span> WITH 3+ YEARS EXPERIENCE
+              <span className="text-pink-400">SENIOR SYSTEMS ENGINEER</span> AT INFOSYS LIMITED
             </p>
           </div>
           
           <h1 className="text-4xl md:text-6xl font-bold mb-6 leading-tight uppercase tracking-wide">
             <AnimatedText
-              text="CREATING BEAUTIFUL DIGITAL EXPERIENCES THROUGH CODE"
+              text="PAVAN KALYAN JILLUDIMUDI"
               animation="reveal"
-              className="block"
+              className="block mb-2"
             />
+            <span className="text-2xl md:text-3xl text-pink-400 uppercase tracking-wide block">FRONTEND DEVELOPER</span>
           </h1>
           
           <p className="text-muted-foreground text-lg md:text-xl mb-8 opacity-0 animate-fade-in-up uppercase tracking-wide" style={{ animationDelay: "0.5s", animationFillMode: "forwards" }}>

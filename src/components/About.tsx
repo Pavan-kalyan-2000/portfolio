@@ -5,26 +5,26 @@ import AnimatedText from "./ui/AnimatedText";
 
 const About: React.FC = () => {
   const stats = [
-    { value: "3+", label: "Years Experience" },
-    { value: "20+", label: "Projects Completed" },
-    { value: "15+", label: "Happy Clients" },
+    { value: "3+", label: "YEARS EXPERIENCE" },
+    { value: "30%", label: "IMPROVED USER ENGAGEMENT" },
+    { value: "20%", label: "REDUCED LOAD TIMES" },
   ];
 
   const services = [
     {
       icon: <Monitor size={24} className="text-pink-400" />,
-      title: "Frontend Development",
-      description: "Building responsive and performant user interfaces with Angular, HTML, and CSS.",
+      title: "FRONTEND DEVELOPMENT",
+      description: "BUILDING RESPONSIVE AND USER-FRIENDLY WEB APPLICATIONS WITH ANGULAR, HTML, AND CSS.",
     },
     {
       icon: <Code size={24} className="text-pink-400" />,
-      title: "UI/UX Implementation",
-      description: "Transforming design mockups into functional and visually appealing web applications.",
+      title: "PERFORMANCE OPTIMIZATION",
+      description: "IMPLEMENTING CODE-SPLITTING AND LAZY LOADING TECHNIQUES TO IMPROVE PAGE LOAD TIMES.",
     },
     {
       icon: <Users size={24} className="text-pink-400" />,
-      title: "Team Collaboration",
-      description: "Working effectively with designers, backend developers, and stakeholders.",
+      title: "COLLABORATION",
+      description: "WORKING EFFECTIVELY WITH DESIGNERS, BACKEND DEVELOPERS, AND STAKEHOLDERS USING AGILE METHODOLOGY.",
     },
   ];
 
@@ -33,37 +33,37 @@ const About: React.FC = () => {
       <div className="container mx-auto px-6">
         <div className="text-center mb-16">
           <h2 className="inline-block text-3xl font-bold relative mb-3">
-            <span className="text-gradient">About Me</span>
+            <span className="text-gradient">ABOUT ME</span>
             <span className="absolute -bottom-2 left-0 w-full h-px bg-gradient-to-r from-transparent via-pink-500 to-transparent"></span>
           </h2>
-          <p className="text-muted-foreground max-w-2xl mx-auto">
-            I'm a passionate frontend developer with expertise in creating modern web applications.
+          <p className="text-muted-foreground max-w-2xl mx-auto uppercase tracking-wide">
+            PASSIONATE FRONTEND DEVELOPER WITH EXPERTISE IN CREATING MODERN WEB APPLICATIONS
           </p>
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
           <div className="order-2 md:order-1">
-            <h3 className="text-2xl font-semibold mb-4">
-              <AnimatedText text="Frontend Developer with a passion for creating exceptional user experiences" animation="fade" />
+            <h3 className="text-2xl font-semibold mb-4 uppercase tracking-wide">
+              <AnimatedText text="SENIOR SYSTEMS ENGINEER WITH A PASSION FOR CREATING EXCEPTIONAL USER EXPERIENCES" animation="fade" />
             </h3>
             
             <div className="space-y-4 mb-6">
-              <p className="text-muted-foreground">
-                With over 3 years of experience in frontend development, I specialize in building modern, responsive, and performant web applications using Angular, HTML, and CSS.
+              <p className="text-muted-foreground uppercase tracking-wide">
+                WITH OVER 3 YEARS OF EXPERIENCE IN FRONTEND DEVELOPMENT AT INFOSYS LIMITED, I SPECIALIZE IN BUILDING RESPONSIVE, USER-FRIENDLY WEB APPLICATIONS USING ANGULAR, HTML, AND CSS.
               </p>
-              <p className="text-muted-foreground">
-                I enjoy transforming complex problems into simple, beautiful, and intuitive designs. My goal is to create software that not only functions efficiently but also provides pixel-perfect user experiences.
+              <p className="text-muted-foreground uppercase tracking-wide">
+                I HAVE IMPLEMENTED CODE-SPLITTING AND LAZY LOADING TECHNIQUES TO IMPROVE PAGE LOAD TIMES, RESULTING IN A 30% REDUCTION IN BOUNCE RATES AND 20% REDUCTION IN LOAD TIMES.
               </p>
-              <p className="text-muted-foreground">
-                When I'm not coding, you'll find me exploring new technologies, contributing to open-source projects, or sharing knowledge with the developer community.
+              <p className="text-muted-foreground uppercase tracking-wide">
+                MY EDUCATION IN ELECTRICAL AND ELECTRONICS ENGINEERING AND CERTIFICATIONS IN AGILE DEVELOPMENT AND ANGULAR COMPLEMENT MY PROFESSIONAL EXPERIENCE.
               </p>
             </div>
             
             <div className="flex flex-wrap gap-4 mb-8">
               {stats.map((stat, index) => (
-                <div key={index} className="gradient-border p-4 w-32">
+                <div key={index} className="gradient-border p-4 w-36">
                   <div className="text-3xl font-bold text-white mb-1">{stat.value}</div>
-                  <div className="text-sm text-muted-foreground">{stat.label}</div>
+                  <div className="text-xs text-muted-foreground tracking-wide">{stat.label}</div>
                 </div>
               ))}
             </div>
@@ -78,16 +78,20 @@ const About: React.FC = () => {
               </div>
               <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent"></div>
               <div className="absolute bottom-0 left-0 right-0 p-6">
-                <h4 className="text-xl font-semibold mb-1">Alex Johnson</h4>
-                <p className="text-pink-400 text-sm">Frontend Developer</p>
+                <h4 className="text-xl font-semibold mb-1 uppercase">PAVAN KALYAN JILLUDIMUDI</h4>
+                <p className="text-pink-400 text-sm uppercase">SENIOR SYSTEMS ENGINEER</p>
+                <div className="mt-2 text-xs text-muted-foreground">
+                  <p>+918897878975 | PAVANKALYAN3771@GMAIL.COM</p>
+                  <p>HYDERABAD, INDIA 500088</p>
+                </div>
               </div>
             </div>
           </div>
         </div>
         
         <div className="mt-24">
-          <h3 className="text-2xl font-semibold text-center mb-12">
-            <AnimatedText text="What I Do" animation="fade" className="inline-block" />
+          <h3 className="text-2xl font-semibold text-center mb-12 uppercase tracking-wide">
+            <AnimatedText text="WHAT I DO" animation="fade" className="inline-block" />
           </h3>
           
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
