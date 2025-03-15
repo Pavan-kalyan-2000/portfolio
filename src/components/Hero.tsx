@@ -1,6 +1,5 @@
 
 import React, { useEffect, useRef } from "react";
-import { ArrowDown } from "lucide-react";
 import AnimatedText from "./ui/AnimatedText";
 import GlowingButton from "./ui/GlowingButton";
 
@@ -69,16 +68,6 @@ const Hero: React.FC = () => {
             </GlowingButton>
           </div>
         </div>
-      </div>
-      
-      <div className="absolute bottom-10 left-1/2 transform -translate-x-1/2 animate-bounce">
-        <button 
-          onClick={() => document.querySelector("#about")?.scrollIntoView({ behavior: "smooth" })}
-          className="text-muted-foreground hover:text-white transition-colors flex flex-col items-center"
-        >
-          <span className="text-sm font-medium mb-2 uppercase tracking-wide">SCROLL DOWN</span>
-          <ArrowDown size={20} />
-        </button>
       </div>
       
       <div className="absolute bottom-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-pink-500/50 to-transparent" />
