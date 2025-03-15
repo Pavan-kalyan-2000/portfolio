@@ -1,14 +1,14 @@
 
 import React from "react";
-import { Github, Linkedin, Twitter, Instagram } from "lucide-react";
+import { Github, Linkedin, MessageSquare, Instagram } from "lucide-react";
 
 const Footer: React.FC = () => {
   const currentYear = new Date().getFullYear();
   
   const socialLinks = [
     { icon: <Github size={20} />, href: "https://github.com" },
-    { icon: <Linkedin size={20} />, href: "https://linkedin.com" },
-    { icon: <Twitter size={20} />, href: "https://twitter.com" },
+    { icon: <Linkedin size={20} />, href: "https://www.linkedin.com/in/pavan-kalyan-jilludimudi" },
+    { icon: <MessageSquare size={20} />, href: "https://wa.me/918897878975" },
     { icon: <Instagram size={20} />, href: "https://instagram.com" },
   ];
 
