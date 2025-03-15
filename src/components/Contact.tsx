@@ -3,7 +3,7 @@ import React, { useState } from "react";
 import GlowingButton from "./ui/GlowingButton";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
-import { Mail, Phone, MapPin, Send } from "lucide-react";
+import { Mail, Phone, MapPin, Send, Linkedin } from "lucide-react";
 import { toast } from "sonner";
 import AnimatedText from "./ui/AnimatedText";
 
@@ -43,21 +43,27 @@ const Contact: React.FC = () => {
   const contactInfo = [
     {
       icon: <Mail size={20} className="text-pink-400" />,
-      title: "Email",
-      value: "contact@example.com",
-      href: "mailto:contact@example.com"
+      title: "EMAIL",
+      value: "PAVANKALYAN3771@GMAIL.COM",
+      href: "mailto:pavankalyan3771@gmail.com"
     },
     {
       icon: <Phone size={20} className="text-pink-400" />,
-      title: "Phone",
-      value: "+1 (123) 456-7890",
-      href: "tel:+11234567890"
+      title: "PHONE",
+      value: "+918897878975",
+      href: "tel:+918897878975"
     },
     {
       icon: <MapPin size={20} className="text-pink-400" />,
-      title: "Location",
-      value: "San Francisco, CA",
+      title: "LOCATION",
+      value: "HYDERABAD, INDIA 500088",
       href: "#"
+    },
+    {
+      icon: <Linkedin size={20} className="text-pink-400" />,
+      title: "LINKEDIN",
+      value: "PAVAN KALYAN JILLUDIMUDI",
+      href: "https://www.linkedin.com/in/pavan-kalyan-jilludimudi"
     }
   ];
 
@@ -90,6 +96,8 @@ const Contact: React.FC = () => {
                   key={index}
                   href={item.href}
                   className="flex items-center space-x-4 p-4 gradient-border rounded-lg transition-transform hover:translate-x-2"
+                  target={item.title === "LINKEDIN" ? "_blank" : undefined}
+                  rel={item.title === "LINKEDIN" ? "noopener noreferrer" : undefined}
                 >
                   <div className="bg-muted w-10 h-10 rounded-full flex items-center justify-center">
                     {item.icon}
