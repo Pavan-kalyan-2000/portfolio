@@ -25,10 +25,21 @@ const Certifications: React.FC = () => {
               <AnimatedText text="CERTIFICATIONS" animation="fade" />
             </h3>
             
-            <div className="p-6 gradient-border rounded-lg">
-              <p className="text-muted-foreground text-center">
-                No certifications to display at this time.
-              </p>
+            <div className="p-6 gradient-border rounded-lg space-y-4">
+              <div className="p-4 bg-secondary/30 rounded-md border border-muted">
+                <h4 className="font-medium mb-1">INFOSYS GLOBAL AGILE DEVELOPER CERTIFICATION</h4>
+                <p className="text-sm text-muted-foreground">Comprehensive training in Agile methodologies and development practices</p>
+              </div>
+              
+              <div className="p-4 bg-secondary/30 rounded-md border border-muted">
+                <h4 className="font-medium mb-1">INFOSYS CERTIFIED FRONT END WEB DEVELOPER</h4>
+                <p className="text-sm text-muted-foreground">Expert-level certification in modern frontend development techniques</p>
+              </div>
+              
+              <div className="p-4 bg-secondary/30 rounded-md border border-muted">
+                <h4 className="font-medium mb-1">INFOSYS CERTIFIED ANGULAR DEVELOPER</h4>
+                <p className="text-sm text-muted-foreground">Specialized certification in Angular framework and application development</p>
+              </div>
             </div>
           </div>
           
@@ -38,10 +49,16 @@ const Certifications: React.FC = () => {
               <AnimatedText text="RECOGNITIONS" animation="fade" />
             </h3>
             
-            <div className="p-6 gradient-border rounded-lg">
-              <p className="text-muted-foreground text-center">
-                No recognitions to display at this time.
-              </p>
+            <div className="p-6 gradient-border rounded-lg space-y-4">
+              <div className="p-4 bg-secondary/30 rounded-md border border-muted">
+                <h4 className="font-medium mb-1">APPRECIATION FROM RISE GRACIOUS</h4>
+                <p className="text-sm text-muted-foreground">Recognition for outstanding contributions to project success</p>
+              </div>
+              
+              <div className="p-4 bg-secondary/30 rounded-md border border-muted">
+                <h4 className="font-medium mb-1">NOMINATED FOR EXCELLENCE IN CODING SKILLS</h4>
+                <p className="text-sm text-muted-foreground">Nominated by peers and leadership for exceptional coding practices</p>
+              </div>
             </div>
             
             <div className="mt-8 p-6 bg-secondary/50 rounded-lg border border-muted">
