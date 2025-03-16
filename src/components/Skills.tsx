@@ -69,32 +69,6 @@ const Skills: React.FC = () => {
                 </span>
               ))}
             </div>
-            
-            <div className="mt-12 p-6 gradient-border rounded-lg">
-              <h4 className="text-xl font-semibold mb-4 uppercase tracking-wide">CERTIFICATIONS & ACCOMPLISHMENTS</h4>
-              <ul className="space-y-3 text-muted-foreground uppercase">
-                <li className="flex items-center">
-                  <span className="w-2 h-2 bg-pink-500 rounded-full mr-2"></span>
-                  INFOSYS GLOBAL AGILE DEVELOPER CERTIFICATION
-                </li>
-                <li className="flex items-center">
-                  <span className="w-2 h-2 bg-pink-500 rounded-full mr-2"></span>
-                  INFOSYS CERTIFIED FRONT END WEB DEVELOPER
-                </li>
-                <li className="flex items-center">
-                  <span className="w-2 h-2 bg-pink-500 rounded-full mr-2"></span>
-                  INFOSYS CERTIFIED ANGULAR DEVELOPER
-                </li>
-                <li className="flex items-center">
-                  <span className="w-2 h-2 bg-pink-500 rounded-full mr-2"></span>
-                  APPRECIATION FROM RISE GRACIOUS
-                </li>
-                <li className="flex items-center">
-                  <span className="w-2 h-2 bg-pink-500 rounded-full mr-2"></span>
-                  NOMINATED FOR EXCELLENCE IN CODING SKILLS
-                </li>
-              </ul>
-            </div>
           </div>
         </div>
       </div>

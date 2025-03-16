@@ -1,43 +1,8 @@
 
 import React from "react";
 import AnimatedText from "./ui/AnimatedText";
-import { Award, Trophy, Star, CheckCircle2 } from "lucide-react";
 
 const Certifications: React.FC = () => {
-  const certifications = [
-    {
-      title: "INFOSYS GLOBAL AGILE DEVELOPER CERTIFICATION",
-      description: "CERTIFIED IN AGILE DEVELOPMENT METHODOLOGIES AND PRACTICES",
-      icon: <Award className="text-pink-400" size={24} />,
-      date: "2022"
-    },
-    {
-      title: "INFOSYS CERTIFIED FRONT END WEB DEVELOPER",
-      description: "PROFICIENT IN HTML, CSS, JAVASCRIPT, AND MODERN WEB FRAMEWORKS",
-      icon: <Trophy className="text-pink-400" size={24} />,
-      date: "2021"
-    },
-    {
-      title: "INFOSYS CERTIFIED ANGULAR DEVELOPER",
-      description: "EXPERTISE IN DEVELOPING SINGLE PAGE APPLICATIONS USING ANGULAR",
-      icon: <Star className="text-pink-400" size={24} />,
-      date: "2021" 
-    }
-  ];
-
-  const achievements = [
-    {
-      title: "APPRECIATION FROM RISE GRACIOUS",
-      description: "RECOGNIZED FOR EXCEPTIONAL CONTRIBUTION TO PROJECT DELIVERY",
-      year: "2022"
-    },
-    {
-      title: "NOMINATED FOR EXCELLENCE IN CODING SKILLS",
-      description: "ACKNOWLEDGED FOR OUTSTANDING TECHNICAL CAPABILITIES",
-      year: "2023"
-    }
-  ];
-
   return (
     <section id="certifications" className="py-24 bg-black/50 relative">
       <div className="absolute top-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-pink-500/50 to-transparent" />
@@ -60,23 +25,10 @@ const Certifications: React.FC = () => {
               <AnimatedText text="CERTIFICATIONS" animation="fade" />
             </h3>
             
-            <div className="space-y-6">
-              {certifications.map((cert, index) => (
-                <div 
-                  key={index} 
-                  className="gradient-border p-6 opacity-0 animate-fade-in-up"
-                  style={{ animationDelay: `${index * 0.1 + 0.3}s`, animationFillMode: "forwards" }}
-                >
-                  <div className="flex gap-4">
-                    <div className="mt-1">{cert.icon}</div>
-                    <div>
-                      <h4 className="text-lg font-medium mb-2">{cert.title}</h4>
-                      <p className="text-muted-foreground text-sm mb-2">{cert.description}</p>
-                      <span className="text-xs text-pink-400">{cert.date}</span>
-                    </div>
-                  </div>
-                </div>
-              ))}
+            <div className="p-6 gradient-border rounded-lg">
+              <p className="text-muted-foreground text-center">
+                No certifications to display at this time.
+              </p>
             </div>
           </div>
           
@@ -87,22 +39,9 @@ const Certifications: React.FC = () => {
             </h3>
             
             <div className="p-6 gradient-border rounded-lg">
-              <ul className="space-y-6">
-                {achievements.map((achievement, index) => (
-                  <li 
-                    key={index} 
-                    className="flex items-start gap-3 opacity-0 animate-fade-in-up"
-                    style={{ animationDelay: `${index * 0.1 + 0.5}s`, animationFillMode: "forwards" }}
-                  >
-                    <CheckCircle2 size={20} className="text-pink-400 mt-1 shrink-0" />
-                    <div>
-                      <h4 className="font-medium">{achievement.title}</h4>
-                      <p className="text-muted-foreground text-sm mt-1">{achievement.description}</p>
-                      <span className="text-xs text-pink-400 mt-1 block">{achievement.year}</span>
-                    </div>
-                  </li>
-                ))}
-              </ul>
+              <p className="text-muted-foreground text-center">
+                No recognitions to display at this time.
+              </p>
             </div>
             
             <div className="mt-8 p-6 bg-secondary/50 rounded-lg border border-muted">
