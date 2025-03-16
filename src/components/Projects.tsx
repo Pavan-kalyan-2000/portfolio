@@ -21,11 +21,11 @@ const Projects: React.FC = () => {
       projectUrl: "#project-2",
     },
     {
-      title: "Fitness Tracking App",
-      description: "A mobile-first web application for tracking workouts, nutrition, and progress with interactive charts and social features.",
-      tags: ["Angular", "Firebase", "PWA", "Material UI"],
-      imageUrl: "https://images.unsplash.com/photo-1517836357463-d25dfeac3438?q=80&w=2940&auto=format&fit=crop",
-      projectUrl: "#project-3",
+      title: "Prompting Is All You Need",
+      description: "A modern web application showcasing advanced prompting techniques for AI systems and language models.",
+      tags: ["React", "Next.js", "TypeScript", "AI Tools"],
+      imageUrl: "/lovable-uploads/e88fc2dd-9340-4e90-bd84-86cb6ab37502.png",
+      projectUrl: "https://v0-prompting-is-all-you-need-black.vercel.app/",
     },
     {
       title: "JB Personal Training Gym",
