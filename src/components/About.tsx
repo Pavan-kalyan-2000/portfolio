@@ -72,9 +72,11 @@ const About: React.FC = () => {
           <div className="order-1 md:order-2">
             <div className="relative rounded-lg overflow-hidden glow-card">
               <div className="aspect-w-4 aspect-h-5 bg-gradient-to-br from-secondary to-black p-1">
-                <div className="w-full h-full bg-[url('https://images.unsplash.com/photo-1580927752452-89d86da3fa0a?q=80&w=2940&auto=format&fit=crop')] bg-cover bg-center rounded-lg">
-                  <div className="w-full h-full bg-black/30 backdrop-blur-sm"></div>
-                </div>
+                <img 
+                  src="/lovable-uploads/d70fa21d-7e55-4b69-b0c7-3e03435264f8.png" 
+                  alt="Pavan Kalyan Jilludimudi" 
+                  className="w-full h-full object-cover rounded-lg"
+                />
               </div>
               <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent"></div>
               <div className="absolute bottom-0 left-0 right-0 p-6">

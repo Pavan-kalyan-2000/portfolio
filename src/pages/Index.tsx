@@ -7,6 +7,7 @@ import Skills from "@/components/Skills";
 import Projects from "@/components/Projects";
 import Contact from "@/components/Contact";
 import Footer from "@/components/Footer";
+import Certifications from "@/components/Certifications";
 
 const Index = () => {
   useEffect(() => {
@@ -38,6 +39,7 @@ const Index = () => {
       <Hero />
       <About />
       <Skills />
+      <Certifications />
       <Projects />
       <Contact />
       <Footer />
