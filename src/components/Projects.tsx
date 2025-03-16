@@ -28,11 +28,11 @@ const Projects: React.FC = () => {
       projectUrl: "#project-3",
     },
     {
-      title: "Portfolio Website",
-      description: "A custom portfolio website for a photographer showcasing their work with image galleries, filterable collections, and contact forms.",
+      title: "JB Personal Training Gym",
+      description: "A responsive website designed for a gym showcasing their customers' transformation images and videos with testimonials and service offerings.",
       tags: ["HTML5", "CSS3", "JavaScript", "Responsive Design"],
-      imageUrl: "https://images.unsplash.com/photo-1493863641943-9a9eabccc4e9?q=80&w=2939&auto=format&fit=crop",
-      projectUrl: "#project-4",
+      imageUrl: "/lovable-uploads/38bc79a5-b495-4732-8708-ac4ea1d14b65.png",
+      projectUrl: "https://jbpersonaltraininggym.com",
     },
   ];
 
