@@ -1,4 +1,3 @@
-
 import React from "react";
 import ProjectCard from "./ui/ProjectCard";
 import GlowingButton from "./ui/GlowingButton";
@@ -7,11 +6,11 @@ import AnimatedText from "./ui/AnimatedText";
 const Projects: React.FC = () => {
   const featuredProjects = [
     {
-      title: "E-commerce Dashboard",
-      description: "An Angular-based admin dashboard for an e-commerce platform with real-time analytics, inventory management, and order processing features.",
-      tags: ["Angular", "RxJS", "NgRx", "Chart.js"],
-      imageUrl: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=2940&auto=format&fit=crop",
-      projectUrl: "#project-1",
+      title: "TalkTalk Telecom",
+      description: "A telecom project that provides broadband and TV services. I worked there for about 2 years, updating new features as per the designs.",
+      tags: ["HTML", "CSS", "AngularJS", "Responsive Design"],
+      imageUrl: "/lovable-uploads/5e0f542d-2ea4-409e-9ffa-7bc6d38828e1.png",
+      projectUrl: "https://www.talktalk.co.uk/",
     },
     {
       title: "Travel Booking Platform",
