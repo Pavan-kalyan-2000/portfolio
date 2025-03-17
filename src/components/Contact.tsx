@@ -1,4 +1,3 @@
-
 import React, { useState } from "react";
 import GlowingButton from "./ui/GlowingButton";
 import { Input } from "@/components/ui/input";
@@ -27,17 +26,40 @@ const Contact: React.FC = () => {
     e.preventDefault();
     setIsSubmitting(true);
     
-    // Simulate form submission
-    setTimeout(() => {
-      toast.success("Message sent successfully! I'll get back to you soon.");
+    try {
+      // Format the message for WhatsApp
+      const whatsappMessage = `
+*Name:* ${formData.name}
+*Email:* ${formData.email}
+*Subject:* ${formData.subject}
+*Message:* ${formData.message}
+      `.trim();
+      
+      // Encode the message for a URL
+      const encodedMessage = encodeURIComponent(whatsappMessage);
+      
+      // Create WhatsApp URL with the message
+      const whatsappUrl = `https://wa.me/+918897878975?text=${encodedMessage}`;
+      
+      // Open WhatsApp in a new tab
+      window.open(whatsappUrl, '_blank');
+      
+      // Show success toast
+      toast.success("Opening WhatsApp to send your message!");
+      
+      // Reset form after successful submission
       setFormData({
         name: "",
         email: "",
         subject: "",
         message: ""
       });
-      setIsSubmitting(false);
-    }, 1500);
+    } catch (error) {
+      toast.error("Something went wrong. Please try again.");
+      console.error("WhatsApp redirect error:", error);
+    }
+    
+    setIsSubmitting(false);
   };
 
   const contactInfo = [
