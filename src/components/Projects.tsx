@@ -1,3 +1,4 @@
+
 import React from "react";
 import ProjectCard from "./ui/ProjectCard";
 import GlowingButton from "./ui/GlowingButton";
@@ -13,11 +14,11 @@ const Projects: React.FC = () => {
       projectUrl: "https://www.talktalk.co.uk/",
     },
     {
-      title: "Travel Booking Platform",
-      description: "A responsive travel booking website with advanced filtering, payment integration, and personalized user experiences.",
-      tags: ["Angular", "TypeScript", "SCSS", "RESTful APIs"],
-      imageUrl: "https://images.unsplash.com/photo-1469854523086-cc02fe5d8800?q=80&w=2421&auto=format&fit=crop",
-      projectUrl: "#project-2",
+      title: "Openreach HUD",
+      description: "Heads-Up Display (HUD) is the system simplifies customer service at BT Openreach. I implemented the whole new UI that improved user experience and optimized performance.",
+      tags: ["Angular", "TypeScript", "CSS3", "Responsive UI"],
+      imageUrl: "/lovable-uploads/ea38824f-63ac-4c86-afe2-54848f029b7d.png",
+      projectUrl: "https://www.infosys.com/industries/communication-services/case-studies/customer-service-bt-openreach.html",
     },
     {
       title: "Prompting Is All You Need",
