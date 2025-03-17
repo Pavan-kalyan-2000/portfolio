@@ -60,13 +60,6 @@ const Certifications: React.FC = () => {
                 <p className="text-sm text-muted-foreground">Nominated by peers and leadership for exceptional coding practices</p>
               </div>
             </div>
-            
-            <div className="mt-8 p-6 bg-secondary/50 rounded-lg border border-muted">
-              <h4 className="text-lg font-medium mb-4">CONTINUING EDUCATION</h4>
-              <p className="text-muted-foreground text-sm">
-                I'M COMMITTED TO CONTINUOUS LEARNING AND STAYING UPDATED WITH THE LATEST FRONTEND TECHNOLOGIES AND BEST PRACTICES THROUGH ONLINE COURSES AND INDUSTRY CONFERENCES.
-              </p>
-            </div>
           </div>
         </div>
       </div>
