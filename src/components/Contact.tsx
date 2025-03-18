@@ -1,3 +1,4 @@
+
 import React, { useState } from "react";
 import GlowingButton from "./ui/GlowingButton";
 import { Input } from "@/components/ui/input";
@@ -62,6 +63,9 @@ const Contact: React.FC = () => {
     setIsSubmitting(false);
   };
 
+  // Update the location coordinates for Hyderabad
+  const hyderabadCoordinates = "17.385044,78.486671"; // Hyderabad coordinates
+  
   const contactInfo = [
     {
       icon: <Mail size={20} className="text-pink-400" />,
@@ -79,7 +83,7 @@ const Contact: React.FC = () => {
       icon: <MapPin size={20} className="text-pink-400" />,
       title: "LOCATION",
       value: "HYDERABAD, INDIA 500088",
-      href: "#"
+      href: `https://www.google.com/maps?q=${hyderabadCoordinates}`
     },
     {
       icon: <Linkedin size={20} className="text-pink-400" />,
@@ -118,8 +122,8 @@ const Contact: React.FC = () => {
                   key={index}
                   href={item.href}
                   className="flex items-center space-x-4 p-4 gradient-border rounded-lg transition-transform hover:translate-x-2"
-                  target={item.title === "LINKEDIN" ? "_blank" : undefined}
-                  rel={item.title === "LINKEDIN" ? "noopener noreferrer" : undefined}
+                  target="_blank"
+                  rel="noopener noreferrer"
                 >
                   <div className="bg-muted w-10 h-10 rounded-full flex items-center justify-center">
                     {item.icon}
