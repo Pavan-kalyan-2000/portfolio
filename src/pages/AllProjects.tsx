@@ -44,7 +44,7 @@ const AllProjects = () => {
       title: "MIST Official Website",
       description: "Official website for MIST with artist information, music releases, tour dates, and merchandise store.",
       tags: ["HTML5", "CSS3", "JavaScript", "Responsive Design"],
-      imageUrl: "https://images.squarespace-cdn.com/content/v1/6152dcd28817d06c5e818ec3/cbcde944-44d1-4110-854d-745a95ed07e0/0E9A9235+2.jpg",
+      imageUrl: "/lovable-uploads/0bd1476a-c33c-428f-99cb-2e4f18dbffe9.png",
       projectUrl: "https://www.mistofficial.com/",
     },
     {
@@ -58,7 +58,7 @@ const AllProjects = () => {
       title: "Lil Eazzyy Official",
       description: "Official website for hip-hop artist Lil Eazzyy featuring music, videos, tour dates, and merchandise.",
       tags: ["HTML5", "CSS3", "JavaScript", "Interactive UI"],
-      imageUrl: "https://www.lileazzyyofficial.com/sites/g/files/g2000014506/files/styles/suzuki_is_image_banner_desktop_1x/public/2021-09/eazzyy-d2c-header-mobile.jpg",
+      imageUrl: "/lovable-uploads/be1bbe69-a351-431e-8857-3bedb2340dd3.png",
       projectUrl: "https://www.lileazzyyofficial.com/",
     },
     {
