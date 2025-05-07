@@ -51,7 +51,7 @@ const AllProjects = () => {
       title: "Alec Benjamin",
       description: "Official website for artist Alec Benjamin featuring music releases, videos, tour dates and merchandise.",
       tags: ["HTML5", "CSS3", "JavaScript", "Responsive Design"],
-      imageUrl: "https://www.alecbenjamin.com/sites/g/files/g2000014161/files/2022-06/alec-benjamin-hub.jpg",
+      imageUrl: "/lovable-uploads/d3e54cf1-b9d6-463d-bad4-b301fb8edb80.png",
       projectUrl: "https://www.alecbenjamin.com/",
     },
     {
@@ -65,7 +65,7 @@ const AllProjects = () => {
       title: "Bizzy Banks Official",
       description: "Official website for Brooklyn-based rapper Bizzy Banks with music, videos, tour dates, and merchandise.",
       tags: ["HTML5", "CSS3", "JavaScript", "Visual Design"],
-      imageUrl: "https://www.bizzybanksofficial.com/sites/g/files/g2000014101/files/bizzybanksdotcomheader.jpg",
+      imageUrl: "/lovable-uploads/75244b9f-3b9f-4798-8cd7-fe05fbf3e232.png",
       projectUrl: "https://www.bizzybanksofficial.com/",
     }
   ];
