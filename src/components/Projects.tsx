@@ -3,6 +3,7 @@ import React from "react";
 import ProjectCard from "./ui/ProjectCard";
 import GlowingButton from "./ui/GlowingButton";
 import AnimatedText from "./ui/AnimatedText";
+import { Link } from "react-router-dom";
 
 const Projects: React.FC = () => {
   const featuredProjects = [
@@ -67,12 +68,11 @@ const Projects: React.FC = () => {
             className="text-xl mb-6 block"
             animation="fade"
           />
-          <GlowingButton 
-            onClick={() => window.open("https://github.com", "_blank")}
-            className="mx-auto"
-          >
-            View All Projects
-          </GlowingButton>
+          <Link to="/all-projects">
+            <GlowingButton className="mx-auto">
+              View All Projects
+            </GlowingButton>
+          </Link>
         </div>
       </div>
 
