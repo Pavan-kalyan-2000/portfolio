@@ -5,7 +5,7 @@ import AnimatedText from "./ui/AnimatedText";
 
 const About: React.FC = () => {
   const stats = [
-    { value: "3+", label: "YEARS EXPERIENCE" },
+    { value: "4+", label: "YEARS EXPERIENCE" },
     { value: "30%", label: "IMPROVED USER ENGAGEMENT" },
     { value: "20%", label: "REDUCED LOAD TIMES" },
   ];
@@ -49,7 +49,7 @@ const About: React.FC = () => {
             
             <div className="space-y-4 mb-6">
               <p className="text-muted-foreground uppercase tracking-wide">
-                WITH OVER 3 YEARS OF EXPERIENCE IN FRONTEND DEVELOPMENT AT INFOSYS LIMITED, I SPECIALIZE IN BUILDING RESPONSIVE, USER-FRIENDLY WEB APPLICATIONS USING ANGULAR, HTML, AND CSS.
+                WITH OVER 4 YEARS OF EXPERIENCE IN FRONTEND DEVELOPMENT AT INFOSYS LIMITED, I SPECIALIZE IN BUILDING RESPONSIVE, USER-FRIENDLY WEB APPLICATIONS USING ANGULAR, HTML, AND CSS.
               </p>
               <p className="text-muted-foreground uppercase tracking-wide">
                 I HAVE IMPLEMENTED CODE-SPLITTING AND LAZY LOADING TECHNIQUES TO IMPROVE PAGE LOAD TIMES, RESULTING IN A 30% REDUCTION IN BOUNCE RATES AND 20% REDUCTION IN LOAD TIMES.
